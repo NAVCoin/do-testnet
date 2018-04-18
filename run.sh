@@ -32,7 +32,6 @@ make
 
 curl -X POST -H 'Content-Type: application/json' -d "Make Complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 make install
-
 curl -X POST -H 'Content-Type: application/json' -d "Install Complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
 ls
