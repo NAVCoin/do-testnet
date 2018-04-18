@@ -8,7 +8,7 @@ git clone -b v4.1.1 https://github.com/NAVCoin/navcoin-core.git
 curl -X POST -H 'Content-Type: application/json' -d "clone complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
 
-cd /navcoin-core
+cd navcoin-core
 
 curl -X POST -H 'Content-Type: application/json' -d "cd to navcoin-core" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
