@@ -71,7 +71,7 @@ wget "${BDB_URL}/${BDB_PKG}" -q
 echo "${BDB_CHK}  ${BDB_PKG}" | sha256sum -c
 tar -xzf ${BDB_PKG}
 
-cd /tmp/${BDB_VER}/build_unix/
+cd ${BDB_VER}/build_unix/
 ../dist/configure --enable-cxx \
                       --disable-shared \
                       --with-pic \
