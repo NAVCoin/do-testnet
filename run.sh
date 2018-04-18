@@ -40,7 +40,8 @@ curl -X POST -H 'Content-Type: application/json' -d "Install Complete" https://w
 ls
 cd ..
 
-rm -fr /navcoin-core/*
+rm -fr navcoin-core/*
+rm -r navcoin-core/
 
 curl -X POST -H 'Content-Type: application/json' -d "rm navcoin-src Complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
