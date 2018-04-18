@@ -40,6 +40,14 @@ apt-get install -yq --no-install-recommends  dos2unix
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+
+ufw allow 22
+ufw allow 44444
+ufw allow 44445
+ufw allow 44446
+
+sleep 5
+
 #--------------------------------------------------------------------------------
 # Install gosu
 #--------------------------------------------------------------------------------
@@ -63,10 +71,7 @@ BDB_CHK="12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef"
 BDB_DIR="/usr/local/berkeley-db-4.8"
 CONFIGURE_FLAGS
 
-ufw allow 22
-ufw allow 44444
-ufw allow 44445
-ufw allow 44446
+
 
 mkdir temp
 cd temp
