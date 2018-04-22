@@ -4,7 +4,7 @@ cd /
 sleep 120
 curl -X POST -H 'Content-Type: application/json' -d "About to clone" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
-git clone -b v4.1.1 https://github.com/NAVCoin/navcoin-core.git
+git clone -b v4.1.2-devnet https://github.com/NAVCoin/navcoin-core.git
 
 #curl -X POST -H 'Content-Type: application/json' -d "clone complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
@@ -45,7 +45,7 @@ rm -r /navcoin-core/
 #curl -X POST -H 'Content-Type: application/json' -d "rm navcoin-src Complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
 
-navcoind -testnet -rpcuser=hi -rpcpassword=pass &
+navcoind -devnet -rpcuser=hi -rpcpassword=pass &
 #curl -X POST -H 'Content-Type: application/json' -d "Start navcoin core Complete" https://webhook.site/eeb8307f-67ce-460b-9a87-24f9f7575d48
 
 
